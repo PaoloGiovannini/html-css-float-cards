@@ -6,7 +6,7 @@
  
  .container{
     max-width: 1170px;
-    margin: auto;
+    margin: 0 auto;
     font-family: 'Fredoka', sans-serif;
  }
 
@@ -19,3 +19,42 @@
  p{
     text-align: center;
  }
+
+ .columns{
+    margin-top: 30px;
+ }
+
+ .clearfix::after {
+    content: '';
+    clear:both;
+    display: table;
+}
+
+ .col{
+    float: left;
+    width: calc(100% / 3 - 40px);
+    margin: 20px;
+    background-color: #0F0E17;
+    color: white;
+}
+
+.col img {
+    height: 100px;
+    float: left;
+    margin-right: 10px;
+}
+
+span, a {
+    display: block;
+    padding: 5px;
+}
+
+span.nomi{
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.col a{
+    color: #63CBF2;
+}
